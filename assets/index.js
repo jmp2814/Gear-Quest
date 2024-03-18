@@ -28,5 +28,5 @@ fetch("/assets/gear.json")
     }
   })
   .catch((error) => {
-    console.error("Error fetching data:", error);
+    console.error("Error fetching data: ", error);
   });
