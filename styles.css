@@ -1,3 +1,9 @@
 .row {
   margin-top: 5px;
 }
+
+.card-img-top {
+  height: 200px;
+  width: auto;
+  object-fit: cover;
+}
