@@ -6,10 +6,11 @@ const app = express();
 const port = 3000;
 
 app.use(bodyParser.json());
+app.use(express.static("public"));
 
 // Serve HTML file
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "/home.html");
 });
 
 // Endpoint to handle form submission

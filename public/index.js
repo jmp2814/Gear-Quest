@@ -1,4 +1,4 @@
-fetch("/assets/gear.json")
+fetch("/public/gear.json")
   .then((response) => response.json())
   .then((data) => {
     const cardContainer = document.getElementById("card-container");
