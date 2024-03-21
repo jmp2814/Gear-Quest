@@ -1,4 +1,4 @@
-fetch("/public/gear.json")
+fetch("db/gear.json")
   .then((response) => response.json())
   .then((data) => {
     const cardContainer = document.getElementById("card-container");
@@ -28,5 +28,5 @@ fetch("/public/gear.json")
     }
   })
   .catch((error) => {
-    console.error("Error fetching data: ", error);
+    console.error(error);
   });
